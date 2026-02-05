@@ -156,4 +156,38 @@ The `img` folder contains PNG images used for performance and scalability discus
 
 You can embed these images in LaTeX/Markdown reports or slides to illustrate how the distributed and hybrid implementations scale with different core and process counts.
 
+### Performance Plots
+
+#### Baseline Comparison
+
+![Baseline Simple](img/simple.png)
+
+#### MPI Performance (4 Processes)
+
+![MPI 4 Processes](img/mpi4.png)
+
+#### MPI Performance (8 Processes)
+
+![MPI 8 Processes](img/mpi8.png)
+
+#### MPI Performance (16 Processes)
+
+![MPI 16 Processes](img/mpi16.png)
+
+#### Hybrid MPI + OpenMP Performance (4 Total Elements)
+
+![Hybrid 4](img/hybrid4.png)
+
+#### Hybrid MPI + OpenMP Performance (8 Total Elements)
+
+![Hybrid 8](img/hybrid8.png)
+
+#### Hybrid MPI + OpenMP Performance (16 Total Elements)
+
+![Hybrid 16](img/hybrid16.png)
+
+#### Hybrid Overview
+
+![Hybrid Overview](img/hybrid.png)
+
 You can extend this project by experimenting with different values of `N`, process counts, thread counts, and task depth, then updating or regenerating the plots.
