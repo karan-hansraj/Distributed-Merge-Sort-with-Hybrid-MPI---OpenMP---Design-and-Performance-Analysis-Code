@@ -142,20 +142,6 @@ The hybrid version will print:
 
 ---
 
-## Images & Plots (`img/`)
-
-The `img` folder contains PNG images used for performance and scalability discussion in reports or presentations:
-
-- **`simple.png`**: Baseline comparison (typically sequential vs one or more parallel configurations).
-- **`mpi4.png`, `mpi8.png`, `mpi16.png`**:
-  - MPI-only performance for 4, 8, and 16 processes (e.g., runtime, speedup, or efficiency).
-- **`hybrid4.png`, `hybrid8.png`, `hybrid16.png`**:
-  - Hybrid MPI+OpenMP performance for 4, 8, and 16 total processing elements (processes × threads).
-- **`hybrid.png`**:
-  - Summary/overview figure comparing pure MPI vs hybrid runs across multiple scales.
-
-You can embed these images in LaTeX/Markdown reports or slides to illustrate how the distributed and hybrid implementations scale with different core and process counts.
-
 ### Performance Plots
 
 #### Baseline Comparison
@@ -174,15 +160,15 @@ You can embed these images in LaTeX/Markdown reports or slides to illustrate how
 
 ![MPI 16 Processes](img/mpi16.png)
 
-#### Hybrid MPI + OpenMP Performance (4 Total Elements)
+#### Hybrid MPI + OpenMP Performance (4x4)
 
 ![Hybrid 4](img/hybrid4.png)
 
-#### Hybrid MPI + OpenMP Performance (8 Total Elements)
+#### Hybrid MPI + OpenMP Performance (8x4)
 
 ![Hybrid 8](img/hybrid8.png)
 
-#### Hybrid MPI + OpenMP Performance (16 Total Elements)
+#### Hybrid MPI + OpenMP Performance (16x4)
 
 ![Hybrid 16](img/hybrid16.png)
 
